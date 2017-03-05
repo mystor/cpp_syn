@@ -1,4 +1,4 @@
-extern crate syn;
+extern crate cpp_syn as syn;
 use syn::*;
 use syn::fold::Folder;
 

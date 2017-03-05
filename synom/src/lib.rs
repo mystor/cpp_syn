@@ -966,8 +966,8 @@ macro_rules! value {
 /// - **Output:** `THING`
 ///
 /// ```rust
-/// extern crate syn;
-/// #[macro_use] extern crate synom;
+/// extern crate cpp_syn as syn;
+/// #[macro_use] extern crate cpp_synom as synom;
 ///
 /// use syn::Expr;
 /// use syn::parse::expr;
@@ -1012,8 +1012,8 @@ macro_rules! delimited {
 /// - `many0!` - zero or more, no separator
 ///
 /// ```rust
-/// extern crate syn;
-/// #[macro_use] extern crate synom;
+/// extern crate cpp_syn as syn;
+/// #[macro_use] extern crate cpp_synom as synom;
 ///
 /// use syn::Ty;
 /// use syn::parse::ty;

@@ -30,7 +30,7 @@ impl Generics {
     /// for that type.
     ///
     /// ```
-    /// # extern crate syn;
+    /// # extern crate cpp_syn as syn;
     /// # #[macro_use]
     /// # extern crate quote;
     /// # fn main() {

@@ -9,7 +9,7 @@ extern crate unicode_xid;
 
 #[cfg(feature = "parsing")]
 #[macro_use]
-extern crate synom;
+extern crate cpp_synom as synom;
 
 #[cfg(feature = "aster")]
 pub mod aster;

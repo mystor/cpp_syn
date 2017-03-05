@@ -1,18 +1,18 @@
 [package]
-name = "synom"
-version = "0.11.0"
-authors = ["David Tolnay <dtolnay@gmail.com>"]
+name = "cpp_synom"
+version = "0.12.0"
+authors = ["Michael Layzell <michael@thelayzells.com>", "David Tolnay <dtolnay@gmail.com>"]
 license = "MIT/Apache-2.0"
-description = "Stripped-down Nom parser used by Syn"
-repository = "https://github.com/dtolnay/syn"
-documentation = "https://dtolnay.github.io/syn/synom/"
+description = "Stripped-down Nom parser used by cpp_syn"
+repository = "https://github.com/mystor/cpp_syn"
+documentation = "https://docs.rs/cpp_syn"
 include = ["Cargo.toml", "src/**/*.rs"]
 
 [dependencies]
 unicode-xid = "0.0.4"
 
 [dev-dependencies.syn]
-version = "0.11"
+version = "0.12.0"
 path = ".."
 features = ["parsing", "full"]
 default-features = false

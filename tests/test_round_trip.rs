@@ -2,7 +2,7 @@
 
 #[macro_use]
 extern crate quote;
-extern crate syn;
+extern crate cpp_syn as syn;
 extern crate syntex_pos;
 extern crate syntex_syntax;
 extern crate time;

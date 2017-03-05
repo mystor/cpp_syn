@@ -1,3 +1,17 @@
+## Important Note
+
+This is a fork of [`syn`](https://github.com/dtolnay/syn) which was created for
+use by [`rust-cpp`](https://github.com/mystor/rust-cpp) with extra features
+which would break backward compatibility for `syn` users.
+
+The main feature added is support for `Span` information which allows `rust-cpp`
+to provide better error messages for inline `c++` code.
+
+At some point `cpp_syn` may merge back into `syn`, at which point it will cease
+to be updated.
+
+What follows is `syn`'s `README.md`:
+
 Nom parser for Rust source code
 ===============================
 

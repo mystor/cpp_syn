@@ -1,4 +1,4 @@
-extern crate syn;
+extern crate cpp_syn as syn;
 use syn::{TokenTree, Span, EMPTY_SPAN};
 use syn::DelimToken::*;
 use syn::Token::*;

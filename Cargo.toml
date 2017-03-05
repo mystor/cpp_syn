@@ -1,18 +1,18 @@
 [package]
-name = "syn"
-version = "0.11.4" # don't forget to update version in readme for breaking changes
-authors = ["David Tolnay <dtolnay@gmail.com>"]
+name = "cpp_syn"
+version = "0.12.0" # don't forget to update version in readme for breaking changes
+authors = ["Michael Layzell <michael@thelayzells.com>", "David Tolnay <dtolnay@gmail.com>"]
 license = "MIT/Apache-2.0"
-description = "Nom parser for Rust source code"
-repository = "https://github.com/dtolnay/syn"
-documentation = "https://dtolnay.github.io/syn/syn/"
+description = "Internal rust-cpp nom parser for Rust source code"
+repository = "https://github.com/mystor/cpp_syn"
+documentation = "https://docs.rs/cpp_syn"
 include = ["Cargo.toml", "src/**/*.rs"]
 
 [features]
 default = ["parsing", "printing"]
 aster = []
 full = []
-parsing = ["unicode-xid", "synom"]
+parsing = ["unicode-xid", "cpp_synom"]
 printing = ["quote"]
 visit = []
 fold = []
@@ -21,7 +21,7 @@ fold = []
 clippy = { version = "0.*", optional = true }
 quote = { version = "0.3", optional = true }
 unicode-xid = { version = "0.0.4", optional = true }
-synom = { version = "0.11", path = "synom", optional = true }
+cpp_synom = { version = "0.12.0", path = "synom", optional = true }
 
 [dev-dependencies]
 syntex_pos = "0.52"
